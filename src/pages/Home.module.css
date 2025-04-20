@@ -1,0 +1,63 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.heroSection {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.title {
+  font-weight: 700 !important;
+  color: #2c3e50;
+  margin-bottom: 1rem !important;
+}
+
+.subtitle {
+  color: #34495e;
+  margin-bottom: 2rem !important;
+}
+
+.description {
+  color: #7f8c8d;
+  line-height: 1.8 !important;
+}
+
+.skillCard {
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 15px;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem !important;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem !important;
+  }
+}

@@ -1,0 +1,153 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.contactContainer {
+  padding: 4rem 0;
+  min-height: 80vh;
+}
+
+.title {
+  margin-bottom: 1rem !important;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 4rem !important;
+}
+
+.contentGrid {
+  margin-top: 2rem;
+}
+
+.contactInfoSection,
+.socialSection {
+  padding: 2rem;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px !important;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  border-radius: 2px;
+}
+
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  transition: all 0.3s ease;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  border-radius: 12px;
+  color: white;
+}
+
+.contactLabel {
+  font-weight: 600 !important;
+  color: #2c3e50;
+}
+
+.contactValue {
+  color: #666;
+}
+
+.socialSection {
+  text-align: center;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  background: linear-gradient(45deg, #2196F3, #00BCD4) !important;
+  color: white !important;
+  padding: 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.socialIcon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+}
+
+/* Add a subtle pattern to the background */
+.contactContainer::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(33, 150, 243, 0.03) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, rgba(0, 188, 212, 0.03) 2%, transparent 0%);
+  background-size: 100px 100px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .contactContainer {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .subtitle {
+    font-size: 1.1rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .contactInfoSection,
+  .socialSection {
+    padding: 1.5rem;
+  }
+
+  .socialLinks {
+    flex-wrap: wrap;
+  }
+}
